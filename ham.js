@@ -27,5 +27,12 @@
 				hamslideoff()
 			}
 		})
+		$("html").on("keydown", function(_e){
+			switch(_e.key){
+				case "Escape":
+				hamslideoff()
+				break
+			}
+		})
 	})
 })(jQuery)
