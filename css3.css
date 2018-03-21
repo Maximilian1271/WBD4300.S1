@@ -43,7 +43,7 @@ h3{
 	background-color: #02dfb4;
 }
 .overlay>img.hamclose{
-	filter: grayscale(100%) invert(1);
+	filter: brightness(0%);
 }
 .hampre2{
 	height: 60px;
