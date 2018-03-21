@@ -1,0 +1,32 @@
+body{
+	background-image: url("assets/ps/13.png");
+	background-repeat: no-repeat;
+}
+h2{
+	/*margin-left: calc(21.4vw*3);*/
+	left: 80vw;
+}
+.port{
+	position: relative;
+	top: 45vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15vw;
+}
+h3{
+	font-size: 30px;
+	font-size: 37px;
+	margin: 0;
+    text-align: center;
+}
+.port>div{
+	cursor: pointer;
+}
+.port img{
+	transition-duration: .4s;
+	filter: grayscale(100%);
+}
+.port div:hover>img{
+	transition-duration: .4s;
+	filter: none;
+}
