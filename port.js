@@ -6,6 +6,7 @@
 			$(".stage").children().remove()
 			// $(".overlay>img[alt=\"portrait\"]").remove()
 		})
+		var content1="<p>"
 		$(".port").find("div").each(function(){								//find correct image and mount in .stage
 			$(this).click(function(){
 				$(".hamclose").parent().fadeIn()
