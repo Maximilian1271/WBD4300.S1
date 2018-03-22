@@ -14,8 +14,8 @@ main{
 .hamclose{
 	height: 54px;
 	position: absolute;
-    top: 4px;
-    left: 3px;
+	top: 4px;
+	left: 3px;
 }
 .bgwrapper{
 	position: fixed;
@@ -37,8 +37,8 @@ main{
 .h1__1{
 	margin-top: 17vh;
 	text-align: center;
-	font-size: 72px;
-	line-height: 72px;
+	font-size: 4.5rem;
+	line-height: 4.5rem;
 	color: white;
 }
 .primary{
@@ -53,7 +53,7 @@ main{
 	position: relative;
 	top: 185px;
 	font-style: italic;
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: hsl(0,0%,75%);
 	width: 485px;
 	height: 195px;
@@ -87,19 +87,20 @@ main{
 	top: 0;
 	left: -100%;
 	width: 25vw;
-	height: 100vh;
+	/*height: 100vh;*/
+	height: 100%;
 	background-color: rgba(0,0,0,.5);
 	color: white;
 	list-style-type: none;
-	font-size: 27px;
+	font-size: 1.6875rem;
 	z-index: 5;
 }
 .hampost>ul{
 	left: 2.2vw;
 	top: 17vh;
-    position: relative;
-    line-height: 27px;
-    list-style-type: none;
+	position: relative;
+	line-height: 27px;
+	list-style-type: none;
 }
 .hampost>ul>li:not(:first-child){
 	margin: 22px 0;
@@ -128,4 +129,31 @@ main{
 	position: absolute;
 	left: 1em;
 	content: "\00B7"
+}
+@media screen and (max-width: 500px){
+	.h1__1{
+		font-size: calc(4.5rem/2);
+		transition-duration: .4s
+	}
+	.h2__1{
+		font-size: calc(1.5rem/1.5);
+		width: 50%;
+		transition-duration: .4s
+	}
+	.slider>ul>*{
+		margin: 0;
+		transition-duration: .4s
+	}
+	.hampre{
+		transition-duration: .4s;
+		-webkit-transform: scale(0.8);
+				transform: scale(0.8);
+	}
+	.hampost{
+		font-size: calc(1.6875rem*0.5);
+	}
+	.hampost>ul{
+		left: initial;
+		padding-left: 20px
+	}
 }

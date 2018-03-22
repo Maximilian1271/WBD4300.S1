@@ -24,11 +24,13 @@ h3{
 }
 .port img{
 	transition-duration: .4s;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
 }
 .port div:hover>img{
 	transition-duration: .4s;
-	filter: none;
+	-webkit-filter: none;
+			filter: none;
 }
 .overlay{
 	display: none;
@@ -43,7 +45,8 @@ h3{
 	background-color: #02dfb4;
 }
 .overlay>img.hamclose{
-	filter: brightness(0%);
+	-webkit-filter: brightness(0%);
+			filter: brightness(0%);
 }
 .hampre2{
 	height: 60px;
