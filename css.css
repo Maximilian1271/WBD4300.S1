@@ -4,6 +4,13 @@
 	/*font-style: normal;*/
 	font-weight: 100;
 }
+main{
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
 .hamclose{
 	height: 54px;
 	position: absolute;
@@ -40,7 +47,11 @@
 }
 .h2__1{
 	margin: 0 auto;
-	margin-top: 186px;
+	z-index: 10;
+	/*margin: 0 auto;*/
+	/*margin-top: 186px;*/
+	position: relative;
+	top: 185px;
 	font-style: italic;
 	font-size: 24px;
 	color: hsl(0,0%,75%);
@@ -49,6 +60,14 @@
 	/*height: 4.1vh;*/
 	/*width: 5.9vw;*/
 	text-align: left;
+}
+.h2__1:hover *{
+	cursor: none;
+	opacity: -1;
+	transition-duration: .4s
+}
+.h2__1 *{
+	transition-duration: .4s
 }
 .h2__1>i>i{
 	float: right

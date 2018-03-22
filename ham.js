@@ -1,11 +1,12 @@
+//Animate Hamburger menu on every page where the <nav class="hamburger"> hive exsists
 (function($, undefined){
 	$(function(){
-		function hamslidein(){
+		function hamslidein(){																				//SlideIn function for easy calling
 			let img="<img src='assets/ps/ic_close_black_1024px.svg'></img>"
 			$(".hampost").show().animate({left:0},300)
-			$(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") //replace hamburger ico with close ico
+			$(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") 		//sloppy attempt to replace hamburger ico with close ico
 			
-			$(".hampost").find("a").each(function(){	//Make "curr Page" dot
+			$(".hampost").find("a").each(function(){														//Dynamically set "curr Page" dot by comparing file name with pathname
 				if($(this).attr("href")==location.pathname.split('/').slice(-1)[0]){
 
 					// $(this).before("&#183;")
@@ -13,13 +14,13 @@
 				}
 			})
 		}
-		function hamslideoff(){
+		function hamslideoff(){																				//SlideOut function for easy calling
 			$(".hampost").animate({left: "-100%"}, 300,function(){$(this).hide()})
 				$(".hampre").find("img").remove()
 				$(".hampre").removeAttr("style")
 		}
 
-		$(".hampre").click(function(){
+		$(".hampre").click(function(){																		//click listener on hamburger ico
 			if(!($(".hampost").is(":visible"))){
 				hamslidein()
 			}
@@ -27,12 +28,15 @@
 				hamslideoff()
 			}
 		})
-		$("html").on("keydown", function(_e){
+		$("html").on("keydown", function(_e){																//call SlideOut() on "esc" press for convenience
 			switch(_e.key){
 				case "Escape":
 				hamslideoff()
 				break
 			}
+		})
+		$("main").click(function(){
+			hamslideoff()
 		})
 	})
 })(jQuery)

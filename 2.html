@@ -8,17 +8,23 @@
 	<title>Document</title>
 </head>
 <body>
-	<nav class="hampre"></nav>
-	<nav class="hampost" style="display: none;">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="2.html">About us</a></li>
-			<li><a href="3.html">The team</a></li>
-			<li><a href="4.html">Contact</a></li>
-		</ul>
-	</nav>
-	<h2><i class="primary">About</i> us</h2>
-	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed</p>
+	<aside>
+		<nav class="hamburger">								<!-- Nav ist so verschachtelt da immer nur eine <nav> sichtbar ist, entweder .hampre oder .hampost -->
+			<nav class="hampre"></nav>
+			<nav class="hampost" style="display: none;">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="2.html">About us</a></li>
+					<li><a href="3.html">The team</a></li>
+					<li><a href="4.html">Contact</a></li>
+				</ul>
+			</nav>
+		</nav>
+	</aside>
+	<main>
+		<h2><i class="primary">About</i> us</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed</p>
+	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="ham.js"></script>
 </body>

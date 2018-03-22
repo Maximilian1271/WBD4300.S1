@@ -1,11 +1,12 @@
+//used to build "overlay" in 3.html with correct images
 (function($, undefined){
 	$(function(){
-		$(".hamclose").click(function(){
+		$(".hamclose").click(function(){									//remove .stage children
 			$(this).parent().fadeOut()
 			$(".stage").children().remove()
 			// $(".overlay>img[alt=\"portrait\"]").remove()
 		})
-		$(".port").find("div").each(function(){
+		$(".port").find("div").each(function(){								//find correct image and mount in .stage
 			$(this).click(function(){
 				$(".hamclose").parent().fadeIn()
 				$(".stage").append("<img>").find("img").attr("src", $(this).find("img").attr("src")).attr("alt", "portrait")

@@ -1,3 +1,5 @@
+// Make background slide in index.html
+// Try using leftarrow/rightarrow!
 (function($, undefined){
 	$(function(){
 		function slideleft(){
@@ -13,11 +15,11 @@
 
 		$(".slider").find("ul>li").each(function(){
 			$(this).click(function(){
-				if($(this).attr("left")!=undefined){
+				if($(this).data({direction: "left"})!=undefined){		//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					// alert("left")
 					slideleft()
 				}
-				else{
+				else if($(this).data({direction: "right"})){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					slideright()
 					//alert("right")
 				}
@@ -35,5 +37,9 @@
 			}
 		})
 		setInterval(function(){slideleft()},10000)
+		$(".h2__1").children().hide()
+		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))
+		document.cookie="previousrand="+rand+";"
+		$(".h2__1").children().eq(rand).show()
 	})
 })(jQuery)
