@@ -39,9 +39,11 @@
 		setInterval(function(){slideleft()},10000)
 		$(".h2__1").children().hide()
 		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))
+		console.log(rand)
 		document.cookie="previousrand="+rand+";"
 		if(document.cookie.split("=").splice(1)==rand){
 			rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))
+			console.log(rand)
 		}
 		else{
 			$(".h2__1").children().eq(rand).show()
