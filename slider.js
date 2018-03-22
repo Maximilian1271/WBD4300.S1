@@ -40,6 +40,12 @@
 		$(".h2__1").children().hide()
 		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))
 		document.cookie="previousrand="+rand+";"
-		$(".h2__1").children().eq(rand).show()
+		if(document.cookie.split("=").splice(1)==rand){
+			rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))
+		}
+		else{
+			$(".h2__1").children().eq(rand).show()
+		}
+		
 	})
 })(jQuery)
