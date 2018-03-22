@@ -1,5 +1,6 @@
 //Vanilla vs formval as in WBD4300.F2, largely copy/paste, changes from feedback introduced
 window.onload = function() {
+<<<<<<< Updated upstream
 	var form = document.querySelector("form")
 	var errordiv = document.querySelector(".errors")
 	var mail = document.querySelector("input[placeholder=\"E-mail\"]")
@@ -7,6 +8,15 @@ window.onload = function() {
 	var surname=document.querySelector("input[placeholder=\"Surname\"]")
 	var subject=document.querySelector("input[placeholder=\"Subject\"]")
 	var content=document.querySelector("textarea")
+=======
+	var form = document.querySelector("form");
+	var errordiv = document.querySelector(".errors");
+	var mail = document.querySelector("input[placeholder=\"E-mail\"]");
+	var name=document.querySelector("input[placeholder=\"Name\"]");.
+	var surname=document.querySelector("input[placeholder=\"Surname\"]");
+	var subject=document.querySelector("input[placeholder=\"Subject\"]");
+	var content=document.querySelector("textarea").value
+>>>>>>> Stashed changes
 	var error=false;
 
 	form.addEventListener("submit", function(_e){
