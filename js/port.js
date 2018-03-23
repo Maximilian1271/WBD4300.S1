@@ -21,13 +21,13 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><a class=\"button\">Aerial Photography</a><a class=\"button\">Landscapes</a></p>"
-			var contentpb="<p class=\"overlaycontent\" data-name=\"Maria Svenne\">Maria Svenne, born in Norrtälje, Sweden Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
+			var contentpb="<p class=\"overlaycontent\" data-name=\"Maria Svenne\">Maria Svenne, born in Norrtälje, Sweden... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><a class=\"button\">Architecture</a></p>"
-			var contentpc="<p class=\"overlaycontent\" data-name=\"Morten Menigmand\">Morten Menigman, born in Aarhus, Denmark Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
+			var contentpc="<p class=\"overlaycontent\" data-name=\"Morten Menigmand\">Morten Menigman, born in Aarhus, Denmark... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
