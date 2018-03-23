@@ -1,0 +1,95 @@
+body{
+	background-image: url("../assets/14.png");
+}
+form{
+	position: absolute;
+	top: 32vh;
+	left: 41vw;
+	display: flex;
+	flex-wrap: wrap;
+	width: 40.3vw;
+}
+textarea,
+input{
+	color: white;
+	flex-grow: 2;
+	flex-basis: 100%;
+	background: black;
+	border-radius: 10px;
+	border: none;
+	height: 60px;
+	width: 345px;
+	margin: 18px 18px;
+	padding: 0 20px;
+	font-size: 1.3em;
+}
+input[type="submit"]{
+	color: black;
+	background-color: #01705a;
+	flex-basis: 345px;
+	flex-grow: 0;
+	margin: 0 auto;
+}
+textarea{
+	height: 280px;
+}
+input::-webkit-input-placeholder{
+	font-style: italic;
+	color: #02dfb4;
+	color: rgba(2, 223, 180, .5);
+	font-size: 25px;
+	/*line-height: 30px;*/
+}
+input:-ms-input-placeholder{
+	font-style: italic;
+	color: #02dfb4;
+	color: rgba(2, 223, 180, .5);
+	font-size: 25px;
+	/*line-height: 30px;*/
+}
+input::-ms-input-placeholder{
+	font-style: italic;
+	color: #02dfb4;
+	color: rgba(2, 223, 180, .5);
+	font-size: 25px;
+	/*line-height: 30px;*/
+}
+input::placeholder{
+	font-style: italic;
+	color: #02dfb4;
+	color: rgba(2, 223, 180, .5);
+	font-size: 25px;
+	/*line-height: 30px;*/
+}
+form>input:nth-child(even):not(input[type="submit"]){
+	text-align: right
+}
+.share{
+	flex-grow: 1;
+	flex-basis: 35%;
+}
+h2{
+	left: 20vw;
+}
+.errors{
+	margin: 10px 10px;
+	visibility: hidden;
+	position: fixed;
+	-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+	top: 20px;
+	left: 50vw;
+	background: rgba(211,211,211,.5);
+	padding: 0 100px 30px 100px;
+	border-radius: 10px;
+	z-index: 100;
+}
+.close{
+	width: 40px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	cursor: pointer;
+	-webkit-filter: contrast(0%);
+			filter: contrast(0%);
+}
