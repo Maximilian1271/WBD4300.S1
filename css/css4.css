@@ -70,6 +70,7 @@ form>input:nth-child(even):not(input[type="submit"]){
 }
 h2{
 	left: 20vw;
+	z-index: 0;
 }
 .errors{
 	margin: 10px 10px;
@@ -92,4 +93,9 @@ h2{
 	cursor: pointer;
 	-webkit-filter: contrast(0%);
 			filter: contrast(0%);
+}
+@media screen and (max-width: 740px){
+	form{
+		display: block;
+	}
 }
