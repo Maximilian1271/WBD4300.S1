@@ -15,13 +15,15 @@
 
 		$(".slider").find("ul>li").each(function(){
 			$(this).click(function(){
-				if($(this).data({direction: "left"})!=undefined){		//data-direction verwendet um zwischen links und rechts zu unterscheiden
+				if($(this).data("direction")==="left"){		//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					// alert("left")
+					// console.log($(this).data())
 					slideleft()
 				}
-				else if($(this).data({direction: "right"})){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
+				else if($(this).data("direction")==="right"){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					slideright()
-					//alert("right")
+					// alert("right")
+					// console.log($(this).data())
 				}
 			})
 		})
