@@ -19,9 +19,11 @@
 					// alert("left")
 					// console.log($(this).data())
 					slideleft()
+					clearInterval(int)
 				}
 				else if($(this).data("direction")==="right"){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					slideright()
+					clearInterval(int)
 					// alert("right")
 					// console.log($(this).data())
 				}
@@ -32,14 +34,16 @@
 			switch(_e.key){
 				case "ArrowLeft":
 				slideleft()
+				clearInterval(int)
 				break
 				case "ArrowRight":
 				slideright()
+				clearInterval(int)
 				break
 			}
 		})
 
-		setInterval(function(){slideleft()},10000)										//Autoslide
+		var int=setInterval(function(){slideleft()},10000)								//Autoslide
 
 		$(".h2__1").children().hide()													//HideAllQuotes
 		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()))	//GenerateRandomQuoteIndex

@@ -133,7 +133,7 @@ main{
 .curr:before{
 	position: absolute;
 	left: 1em;
-	content: "\00B7"
+	content: "\00B7";
 }
 @media screen and (max-width: 500px){
 	.h1__1{
