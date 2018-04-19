@@ -6,7 +6,7 @@
 				$(".bgwrapper").animate({left: -($(".bgwrapper").find("div").first().width())}, function(){
 						$(".bgwrapper").find("div").last().parent().after().append($(".bgwrapper").find("div").first())
 						$(".bgwrapper").css("left", 0)
-					})
+				})
 			}
 		function slideright(){
 			$(".bgwrapper").prepend($(".bgwrapper").find("div").last()).css("left",-($(".bgwrapper").find("div").first().width()))
@@ -15,18 +15,27 @@
 
 		$(".slider").find("ul>li").each(function(){
 			$(this).click(function(){
-				if($(this).data("direction")==="left"){		//data-direction verwendet um zwischen links und rechts zu unterscheiden
-					// alert("left")
-					// console.log($(this).data())
+				switch($(this).data("direction")){
+					case "left":
 					slideleft()
 					clearInterval(int)
-				}
-				else if($(this).data("direction")==="right"){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
+					break
+					case "right":
 					slideright()
 					clearInterval(int)
-					// alert("right")
-					// console.log($(this).data())
 				}
+				// if($(this).data("direction")==="left"){					//data-direction verwendet um zwischen links und rechts zu unterscheiden
+				// 	// alert("left")
+				// 	// console.log($(this).data())
+				// 	slideleft()
+				// 	clearInterval(int)
+				// }
+				// else if($(this).data("direction")==="right"){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
+				// 	slideright()
+				// 	clearInterval(int)
+				// 	// alert("right")
+				// 	// console.log($(this).data())
+				// }
 			})
 		})
 		$("html").on("keydown", function(_e){
