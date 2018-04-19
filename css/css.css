@@ -80,6 +80,7 @@ main{
 	float: right
 }
 blockquote{
+	display: none;
 	margin: 0;
 }
 .hampre{
