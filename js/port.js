@@ -5,7 +5,6 @@
 			$(this).parent().fadeOut()
 			$(".stage").children().remove()
 			$("main>h2 i").removeAttr("style")
-			// $(".overlay>img[alt=\"portrait\"]").remove()
 		})
 		//////////////////////////////////////////////////////////////////////////////////////////////
 		//																							//
@@ -38,14 +37,9 @@
 				$(".hamclose").parent().fadeIn()
 				$(".stage").append("<img>").find("img").attr("src", $(this).find("img").attr("src")).attr("alt", "portrait")
 				$("main>h2 i").css("color", "black")
-				// var curclick=$(this).find("img").attr("src")
-				// console.log(curclick)
-				// $(".stage").after("<div class=\"substage\"></div>").before("<div class=\"substage\"></div>")
-				// console.log($(this).find("img").attr("alt"))
 				switch($(this).find("img").attr("alt")){
 					case "Ola Hvermannsen" :
 					$(".stage").find("img").before("<h2>"+$(this).find("img").attr("alt")+"</h2>").after(contentpa)
-					// $(".stage").find("img").after(contentpa)
 					break
 					case "Maria Svenne":
 					 $(".stage").find("img").before("<h2>"+$(this).find("img").attr("alt")+"</h2>").after(contentpb)
@@ -55,11 +49,8 @@
 					break
 				}
 			})
-			
-			// $(this).click(function(){console.log($(this))})
 		})
 		$("html").on("keyup", function(_e){
-			// console.log(_e.key)
 			switch (_e.key) {
 				case "Escape":
 					$(".hamclose").trigger("click")

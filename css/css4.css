@@ -38,28 +38,24 @@ input::-webkit-input-placeholder{
 	color: #02dfb4;
 	color: rgba(2, 223, 180, .5);
 	font-size: 25px;
-	/*line-height: 30px;*/
 }
 input:-ms-input-placeholder{
 	font-style: italic;
 	color: #02dfb4;
 	color: rgba(2, 223, 180, .5);
 	font-size: 25px;
-	/*line-height: 30px;*/
 }
 input::-ms-input-placeholder{
 	font-style: italic;
 	color: #02dfb4;
 	color: rgba(2, 223, 180, .5);
 	font-size: 25px;
-	/*line-height: 30px;*/
 }
 input::placeholder{
 	font-style: italic;
 	color: #02dfb4;
 	color: rgba(2, 223, 180, .5);
 	font-size: 25px;
-	/*line-height: 30px;*/
 }
 form>input:nth-child(even):not(input[type="submit"]){
 	text-align: right

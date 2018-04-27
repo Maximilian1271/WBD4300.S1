@@ -10,15 +10,10 @@ h2{
 	position: relative;
 	left: 20vw;
 	top: 13.4vh;
-	/*margin-left: 21.4vw;*/
-	/*margin-top: 13.4vh;*/
 }
 p{
 	text-align: center;
 	margin: 20vh 19vw;
-	/*margin: 0 10vw 0 33.5vw;;*/
-	/*position: absolute;*/
-	/*top: 25vh;*/
 	font-size: 24px;
 	line-height: 48px;
 }
@@ -27,11 +22,6 @@ p{
 		margin: 20vh 15vw;
 	}
 }
-/*@media screen and (max-width: 670px){
-	p{
-		margin: 25vh 15vw;
-	}
-}*/
 @media screen and (max-width: 470px){
 	body{
 		background-image: none

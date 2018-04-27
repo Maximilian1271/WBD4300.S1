@@ -2,7 +2,6 @@
 // Try using leftarrow/rightarrow!
 (function($, undefined){
 	function quoterand(){
-			//$(".h2__1").children().hide()													//HideAllQuotes
 			var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()+1))	//GenerateRandomQuoteIndex
 			console.log(rand)
 			if(document.cookie.split("=").splice(1)==rand){									//If random number equals previously generated rand, throw away
@@ -29,10 +28,11 @@
 
 	$(function(){
 		quoterand()
+		var paused=false
 
 		$(".slider").find("ul>li").each(function(){
 			$(this).click(function(){
-				switch($(this).data("direction")){
+				switch($(this).data("direction")){											//data-direction verwendet um zwischen links und rechts zu unterscheiden
 					case "left":
 					slideleft()
 					clearInterval(int)
@@ -41,33 +41,31 @@
 					slideright()
 					clearInterval(int)
 				}
-				// if($(this).data("direction")==="left"){					//data-direction verwendet um zwischen links und rechts zu unterscheiden
-				// 	// alert("left")
-				// 	// console.log($(this).data())
-				// 	slideleft()
-				// 	clearInterval(int)
-				// }
-				// else if($(this).data("direction")==="right"){			//data-direction verwendet um zwischen links und rechts zu unterscheiden
-				// 	slideright()
-				// 	clearInterval(int)
-				// 	// alert("right")
-				// 	// console.log($(this).data())
-				// }
 			})
 		})
-		$("html").on("keydown", function(_e){
+		$("html").keydown(function(_e){
 			// console.log(_e.key)
 			switch(_e.key){
 				case "ArrowLeft":
 				slideleft()
-				clearInterval(int)
+				paused==true
 				break
 				case "ArrowRight":
 				slideright()
-				clearInterval(int)
+				paused==true
 				break
 			}
 		})
-		var int=setInterval(function(){slideleft()},10000)								//Autoslide	
+		var int=setInterval(function(){
+			if(!paused){
+				// console.log("still alive")
+				slideleft()
+			}
+			else{
+				// console.log("dead")
+			}
+		},5000)								//Autoslide	 10000
+		$("body").mouseleave(function(){paused=true})
+		$("body").mouseenter(function(){paused=false})
 	})
 })(jQuery)

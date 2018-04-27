@@ -8,8 +8,6 @@
 			
 			$(".hampost").find("a").each(function(){														//Dynamically set "curr Page" dot by comparing file name with pathname
 				if($(this).attr("href")==location.pathname.split('/').slice(-1)[0]){
-
-					// $(this).before("&#183;")
 					$(this).addClass("curr")
 				}
 			})

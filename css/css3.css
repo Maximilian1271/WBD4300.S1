@@ -3,7 +3,6 @@ body{
 	background-repeat: no-repeat;
 }
 h2{
-	/*margin-left: calc(21.4vw*3);*/
 	left: 80vw;
 	z-index: 10
 }
@@ -89,7 +88,6 @@ h3{
 }
 .overlaycontent{
 	text-align: initial;
-	/*left: 9.5vw;*/
 }
 .button{
 	user-select: none;
@@ -129,9 +127,6 @@ h3{
 }
 p{
 	text-align: center;
-	/*margin: 0 10vw 0 33.5vw;;*/
-	/*position: absolute;*/
-	/*top: 25vh;*/
 	font-size: 24px;
 	line-height: 48px;
 }
