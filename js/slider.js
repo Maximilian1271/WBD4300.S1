@@ -48,11 +48,11 @@
 			switch(_e.key){
 				case "ArrowLeft":
 				slideleft()
-				paused==true
+				paused=true
 				break
 				case "ArrowRight":
 				slideright()
-				paused==true
+				paused=true
 				break
 			}
 		})
