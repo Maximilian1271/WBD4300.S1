@@ -1,7 +1,7 @@
 body{
 	background-image: url("../assets/13.png");
 	background-repeat: no-repeat;
-	background-position: 100vw 100vh;
+	background-size: 100vw 100vh;
 }
 h2{
 	left: 80vw;
