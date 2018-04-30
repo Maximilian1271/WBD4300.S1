@@ -1,5 +1,7 @@
 body{
 	background-image: url("../assets/14.png");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
 }
 form{
 	position: absolute;
