@@ -27,7 +27,7 @@ main{
 	z-index: -20;
 	display: flex;
 }
-.bgwrapper>div{
+.bgwrapper>div>img{
 	height: 100vh;
 	width: 100vw;
 }
