@@ -4,8 +4,9 @@
 		function hamslidein(){																				//SlideIn function for easy calling
 			let img="<img src='assets/ic_close_black_1024px.svg'></img>"
 			$(".hampost").show().animate({left:0},300)
-			$(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") 		//sloppy attempt to replace hamburger ico with close ico
-			
+			// $(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") 		//sloppy attempt to replace hamburger ico with close ico
+			$(".hampre").toggleClass("active")
+
 			$(".hampost").find("a").each(function(){														//Dynamically set "curr Page" dot by comparing file name with pathname
 				if($(this).attr("href")==location.pathname.split('/').slice(-1)[0]){
 					$(this).addClass("curr")

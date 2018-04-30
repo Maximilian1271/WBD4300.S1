@@ -79,7 +79,7 @@ blockquote{
 	display: none;
 	margin: 0;
 }
-.hampre{
+/*.hampre{
 	background-image: url("../assets/ic_menu_black_48px.png");
 	height: 60px;
 	width: 60px;
@@ -88,7 +88,7 @@ blockquote{
 	top: 30px;
 	cursor: pointer;
 	z-index: 6;
-}
+}*/
 .hampost{
 	position: fixed;
 	top: 0;
@@ -162,4 +162,68 @@ blockquote{
 		left: initial;
 		padding-left: 20px
 	}
+}
+.curr{
+	font-weight: 400;
+}
+
+
+/*experimental ham*/
+.hampre{
+	position: relative;
+	background-image: none;
+}
+.hampre.*{
+	width: 24px;
+	height: 2px;
+	display: block;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .3s ease;
+}
+
+.hampre i:nth-child(1) {
+	top: 35%;
+}
+
+.hampre i:nth-child(3) {
+	top: 65%;
+}
+
+.hampre.active i:nth-child(1) {
+	transform: translate(-50%, -50%) rotate(135deg);
+	top: 50%;
+}
+
+.hampre.active i:nth-child(2) {
+	opacity: 0;
+}
+
+.hampre.active i:nth-child(3) {
+	transform: translate(-50%, -50%) rotate(-135deg);
+	top: 50%;
+}
+
+.hampre {
+	width: 60px;
+	height: 60px;
+	z-index: 30;
+	position: relative;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 100%;
+}
+
+.hampre i {
+	width: 24px;
+	height: 2px;
+	display: block;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .3s ease;
 }
