@@ -12,7 +12,7 @@
 					$(this).addClass("curr")
 				}
 				else if(location.pathname.split('/').slice(-1)[0]===""){
-					if($(this).index()==0){
+					if($(this).eq()==0){
 						$(this).addClass("curr")
 					}
 				}
