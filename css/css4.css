@@ -32,6 +32,7 @@ input[type="submit"]{
 }
 textarea{
 	height: 280px;
+	padding: 10px 10px;
 }
 input::-webkit-input-placeholder{
 	font-style: italic;
