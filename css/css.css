@@ -7,6 +7,7 @@
 }
 h2{
 	user-select: none;
+	text-transform: capitalize;
 }
 main{
 	top: 0;
@@ -166,6 +167,9 @@ blockquote{
 }
 .hampost>ul>li:not(:first-child){
 	margin: 22px 0;
+}
+.hampost li{
+	text-transform: capitalize;
 }
 .hampost a{
 	color: inherit;
