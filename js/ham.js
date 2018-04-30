@@ -12,9 +12,7 @@
 					$(this).addClass("curr")
 				}
 				else if(location.pathname.split('/').slice(-1)[0]===""){
-					if($(this).eq()==0){
-						$(this).addClass("curr")
-					}
+					$(".hampost").find("a").first().addClass("curr")
 				}
 			})
 		}
