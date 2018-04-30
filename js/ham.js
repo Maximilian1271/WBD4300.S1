@@ -15,8 +15,9 @@
 		}
 		function hamslideoff(){																				//SlideOut function for easy calling
 			$(".hampost").animate({left: "-100%"}, 300,function(){$(this).hide()})
-				$(".hampre").find("img").remove()
-				$(".hampre").removeAttr("style")
+				// $(".hampre").find("img").remove()
+				// $(".hampre").removeAttr("style")
+				$(".hampre").removeClass("active")
 		}
 
 		$(".hampre").click(function(){																		//click listener on hamburger ico
