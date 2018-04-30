@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/fbm3top.css");
+/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 *{
-	font-family: "omnes-pro",sans-serif;
+	font-family: "Open Sans","omnes-pro",sans-serif;
+	/*font-style: normal;*/
 	font-weight: 100;
 }
 h2{
@@ -35,12 +38,16 @@ main{
 	padding: 0;
 }
 .h1__1{
+	font-family: "omnes-pro";
 	user-select: none;
 	margin-top: 17vh;
 	text-align: center;
 	font-size: 4.5rem;
 	line-height: 4.5rem;
 	color: white;
+}
+.h1__1>*{
+	font-family: "omnes-pro";
 }
 .primary{
 	font-style: normal;
