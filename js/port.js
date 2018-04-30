@@ -53,8 +53,10 @@
 		$("html").on("keyup", function(_e){
 			switch (_e.key) {
 				case "Escape":
-					$(".hamclose").trigger("click")
-				break;
+				if($(".overlay").is(":visible")){
+					$(".hampre2").trigger("click")
+					break;
+				}
 			}
 		})
 	})

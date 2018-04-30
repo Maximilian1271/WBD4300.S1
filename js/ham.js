@@ -34,8 +34,12 @@
 		$("html").on("keydown", function(_e){																//call SlideOut() on "esc" press for convenience
 			switch(_e.key){
 				case "Escape":
-				if($(".hamclose").is(":visible")){
+				if($(".hampost").is(":visible")){
 					hamslideoff()
+					break
+				}
+				else if($(".hampost").is(":hidden")){
+					hamslidein()
 					break
 				}
 			}
