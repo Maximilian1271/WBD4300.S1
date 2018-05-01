@@ -15,7 +15,16 @@ main{
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
+	transition-duration: .5s;
 }
+/*main.left{
+	background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 85%,rgba(0,0,0,1) 100%);
+	transition-duration: .5s
+}
+main.right{
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 85%,rgba(0,0,0,1) 100%);
+	transition-duration: .5s
+}*/
 .hamclose{
 	height: 54px;
 	position: absolute;
@@ -125,6 +134,7 @@ blockquote{
 }
 
 .hampre {
+	cursor: pointer;
 	width: 60px;
 	height: 60px;
 	z-index: 6;
@@ -191,6 +201,7 @@ blockquote{
 	margin: 0 50px;
 	cursor: pointer;
 }
+
 .curr:before{
 	position: absolute;
 	left: 1em;
