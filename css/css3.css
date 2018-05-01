@@ -59,7 +59,8 @@ h3{
 	z-index: 6;
 }
 .stage>img{
-	shape-outside: circle(190px);
+	-webkit-shape-outside: circle(190px);
+	        shape-outside: circle(190px);
 	float: left;
 	position: relative;
 	padding: 6.7vh 15vw;
@@ -91,7 +92,10 @@ h3{
 	text-align: initial;
 }
 .button{
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	transition-duration: .4s;
 	font-size: initial;
 	background-color: black;
@@ -101,12 +105,18 @@ h3{
     padding: 10px 20px;
 }
 .button:hover{
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	transition-duration: .4s;
 	background-color: grey;
 }
 .stage>h2{
-	user-select: text;
+	-webkit-user-select: text;
+	   -moz-user-select: text;
+	    -ms-user-select: text;
+	        user-select: text;
 }
 @media screen and (max-width: 1840px){
 	.stage>img{
