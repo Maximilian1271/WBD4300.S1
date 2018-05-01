@@ -2,7 +2,6 @@
 function hamslidein(){																				//SlideIn function for easy calling
 			let img="<img src='assets/ic_close_black_1024px.svg'></img>"
 			$(".hampost").show().animate({left:0},300)
-			// $(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") 		//sloppy attempt to replace hamburger ico with close ico
 			$(".hampre").toggleClass("active")
 
 			$(".hampost").find("a").each(function(){														//Dynamically set "curr Page" dot by comparing file name with pathname
@@ -16,32 +15,9 @@ function hamslidein(){																				//SlideIn function for easy calling
 		}
 		function hamslideoff(){																				//SlideOut function for easy calling
 			$(".hampost").animate({left: "-100%"}, 300,function(){$(this).hide()})
-				// $(".hampre").find("img").remove()
-				// $(".hampre").removeAttr("style")
 				$(".hampre").removeClass("active")
 		}
 jQuery(function($, undefined){
-	// function hamslidein(){																				//SlideIn function for easy calling
-	// 		let img="<img src='assets/ic_close_black_1024px.svg'></img>"
-	// 		$(".hampost").show().animate({left:0},300)
-	// 		// $(".hampre").append(img).css("background-image", "none").find("img").addClass("hamclose") 		//sloppy attempt to replace hamburger ico with close ico
-	// 		$(".hampre").toggleClass("active")
-
-	// 		$(".hampost").find("a").each(function(){														//Dynamically set "curr Page" dot by comparing file name with pathname
-	// 			if($(this).attr("href")==location.pathname.split('/').slice(-1)[0]){
-	// 				$(this).addClass("curr")
-	// 			}
-	// 			else if(location.pathname.split('/').slice(-1)[0]===""){
-	// 				$(".hampost").find("a").first().addClass("curr")
-	// 			}
-	// 		})
-	// 	}
-	// 	function hamslideoff(){																				//SlideOut function for easy calling
-	// 		$(".hampost").animate({left: "-100%"}, 300,function(){$(this).hide()})
-	// 			// $(".hampre").find("img").remove()
-	// 			// $(".hampre").removeAttr("style")
-	// 			$(".hampre").removeClass("active")
-	// 	}
 	$(function(){
 		$(".hampre").click(function(){																		//click listener on hamburger ico
 			if(!($(".hampost").is(":visible"))){

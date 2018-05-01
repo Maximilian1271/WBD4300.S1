@@ -6,14 +6,6 @@ jQuery(function($, undefined){
 			$(".stage").children().remove()
 			$("main>h2 i").removeAttr("style")
 		})
-		//////////////////////////////////////////////////////////////////////////////////////////////
-		//																							//
-		//																							//
-		//	War mir ursprünglich nicht sicher ob ich den content in die variablen schreiben soll	//
-		//				hab aber gefragt in der schule in man hat gesagt es sei okay				//
-		//																							//
-		//																							//
-		//////////////////////////////////////////////////////////////////////////////////////////////
 			var contentpa="<p class=\"overlaycontent\" data-name=\"Ola Hvermannsen\">Ola Hvermannsen, born in Tromsø, Norway... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\

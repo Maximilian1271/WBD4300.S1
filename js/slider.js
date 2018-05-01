@@ -42,30 +42,6 @@ jQuery(function($, undefined){
 					clearInterval(int)
 				}
 			})
-			// $(this).hover(function(){
-			// 	switch($(this).data("direction")){
-			// 		case "left":
-			// 		// $("main").css("background","linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 85%,rgba(0,0,0,1) 100%)").css("opacity",0)
-			// 		$("main").animate({opacity:1},5000)
-			// 		// $("main").addClass("left")
-			// 		break
-			// 		case "right":
-			// 		$("main").animate({background:"linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 85%,rgba(0,0,0,1) 100%)"},500)
-			// 		// $("main").addClass("right")
-			// 	}
-			// }, function(){
-			// 	switch ($(this).data("direction")) {
-			// 		case "left":
-			// 		$("main").animate({background:"none"},500)
-			// 			// $("main").removeClass("left")
-			// 		break;
-			// 		case "right":
-			// 		$("main").animate({background:"none"},500)
-			// 			// $("main").removeClass("right")
-			// 		break;
-			// 	}
-			// })
-			// $(this).hover(function(){$("main").addClass("active")}, function(){$("main").removeClass("active")})
 		})
 		$("html").keydown(function(_e){
 			// console.log(_e.key)
