@@ -58,7 +58,7 @@ jQuery(function($, undefined){
 					$(".hampre2").trigger("click")
 					$("html").on("keydown", function(_e){																//call SlideOut() on "esc" press for convenience
 					switch(_e.key){
-						case "Escape":
+					case "Escape":
 						if($(".hampost").is(":visible")){
 							hamslideoff()
 							break
@@ -69,7 +69,7 @@ jQuery(function($, undefined){
 						}
 					}
 				})
-					break;
+				break;
 				}
 			}
 		})
