@@ -1,31 +1,9 @@
-body{
-	background-image: url("../assets/12.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
+body{background-image:url("../assets/12.png");background-repeat:no-repeat;background-size:100%;}
+h2{display:inline;margin:0;font-size:48px;line-height:48px;font-style:normal;position:relative;left:20vw;top:13.4vh;}
+p{text-align:left;margin:20vh 20vw;font-size:24px;line-height:48px;}
+@media screen and (max-width:900px){
+	p{margin:20vh 15vw;}
 }
-h2{
-	display: inline;
-	margin: 0;
-	font-size: 48px;
-	line-height: 48px;
-	font-style: normal;
-	position: relative;
-	left: 20vw;
-	top: 13.4vh;
-}
-p{
-	text-align: left;
-	margin: 20vh 19vw;
-	font-size: 24px;
-	line-height: 48px;
-}
-@media screen and (max-width: 900px) {
-	p{
-		margin: 20vh 15vw;
-	}
-}
-@media screen and (max-width: 470px){
-	body{
-		background-image: none
-	}
+@media screen and (max-width:470px){
+	body{background-image:none}
 }
