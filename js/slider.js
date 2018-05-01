@@ -1,6 +1,6 @@
 // Make background slide in index.html
 // Try using leftarrow/rightarrow!
-(function($, undefined){
+jQuery(function($, undefined){
 	function quoterand(){
 		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()+1))	//GenerateRandomQuoteIndex
 		console.log(rand)
@@ -92,4 +92,4 @@
 		$("body").mouseleave(function(){paused=true; console.log(paused)})
 		$("body").mouseenter(function(){paused=false; console.log(paused)})
 	})
-})(jQuery)
+})
