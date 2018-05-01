@@ -22,7 +22,7 @@
 		// 		// $(".hampre").removeAttr("style")
 		// 		$(".hampre").removeClass("active")
 		// }
-		$.getScript("./ham.js")
+		$.getScript("js/ham.js")
 
 		$(".hamclose").click(function(){									//remove .stage children
 			$(this).parent().fadeOut()
