@@ -3,12 +3,12 @@
 jQuery(function($, undefined){
 	function quoterand(){
 		var rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()+1))	//GenerateRandomQuoteIndex
-		console.log(rand)
+		// console.log(rand)
 		if(document.cookie.split("=").splice(1)==rand){									//If random number equals previously generated rand, throw away
 			rand=Math.floor(Math.random() * ($(".h2__1").children().last().index()+1))
 			$(".h2__1").children().eq(rand).show()
 			document.cookie="previousrand="+rand+";"									//Store new random number in cookie if old cookie matches new rand
-			console.log(rand)
+			//console.log(rand)
 		}
 		else{																			//If random number is unique compared to previous attempt, display quote
 			$(".h2__1").children().eq(rand).show()
@@ -65,7 +65,7 @@ jQuery(function($, undefined){
 				// console.log("dead")
 			}
 		},5000)								//Autoslide	 10000
-		$("body").mouseleave(function(){paused=true; console.log(paused)})
-		$("body").mouseenter(function(){paused=false; console.log(paused)})
+		$("body").mouseleave(function(){paused=true;/*console.log(paused)*/})
+		$("body").mouseenter(function(){paused=false;/*console.log(paused)*/})
 	})
 })
