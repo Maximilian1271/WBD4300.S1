@@ -17,8 +17,8 @@ jQuery(function($, undefined){
 	}
 	function slideleft(){
 		$(".bgwrapper").animate({left: -($(".bgwrapper").find("div").first().width())}, function(){
-				$(".bgwrapper").find("div").last().parent().after().append($(".bgwrapper").find("div").first())
-				$(".bgwrapper").css("left", 0)
+			$(".bgwrapper").find("div").last().parent().after().append($(".bgwrapper").find("div").first())
+			$(".bgwrapper").css("left", 0)
 		})
 	}
 	function slideright(){
